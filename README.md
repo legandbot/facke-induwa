@@ -1,6 +1,6 @@
 
 <p align="center">
-<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=33&pause=1000&color=5513F7&width=435&lines=world+best+whatsapp+BOT"alt="typing SVG" /></a></p>
+<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=33&pause=1000&color=5813F7&width=435&lines=world+best+whatsapp+BOT"alt="typing SVG" /></a></p>
 
 <h1 align="center">Induwa-MD 1.0</h1>
 
