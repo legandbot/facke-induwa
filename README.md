@@ -129,9 +129,9 @@
 
 
 
-## VAJIRA MD DEVELOPER TEAM
+## INDUWA MD DEVELOPED BY
 
-| <a href="https://github.com/VajiraTech"><img src="https://telegra.ph/file/44ff060a7b96ff6c0a42a.jpg" width=90 height=90></a> | <a href="https://github.com/kushansewmina1234"><img src="https://telegra.ph/file/7b554aaf04171d11d7ba6.jpg" width=90 height=90></a> | <a href="https://github.com/20070808lk"><img src="https://telegra.ph/file/b194f9be48ca8e09e7a6b.jpg" width=90 height=90></a> | <a href="https://github.com/Darksadas"><img src="https://telegra.ph/file/bdaf8573bd0249df4abb7.jpg" width=90 height=90></a> | <a href="https://github.com/Aadhi777777"><img src="https://telegra.ph/file/87bf2bcb38abef47205ad.jpg" width=90 height=90></a>  |  <a href="https://github.com/Rukshanruka/Rukshan-MD-NEW"><img src="https://telegra.ph/file/aa52e76beeeee65cad24c.jpg" width=90 height=90></a> |
+
 |---|---|---|---|---|---|
 | **[induwara nilupul ]
 
