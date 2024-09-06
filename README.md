@@ -1,6 +1,6 @@
 
 <p align="center">
-<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=33&pause=1000&color=5813F7&width=435&lines=world+best+whatsapp+BOT"alt="typing SVG" /></a></p>
+<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=33&pause=1000&color=5813F7&width=435&lines=බලහන්+මේ+බොටාගෙ+ගැම්ම"alt="typing SVG" /></a></p>
 
 <h1 align="center">Induwa-MD 1.0</h1>
 
@@ -56,13 +56,7 @@
   </a>
 </p>
 
-## 💡 FOLLOW OUR CHANAL
-
-<a href="https://whatsapp.com/channel/0029VahMZasD8SE5GRwzqn3Z"><img src="https://img.shields.io/badge/Join%20Our%20WhatsApp%20Channel-blue" alt="📎 Join Our WhatsApp Channel" width="350"></a>
-
-<br>
-
-<div align="center">
+## ඩිප්ලෝයි කරපල්ල
  
   <h1>👇 DEPLOY NOW 👇</h1>
 </div>
@@ -136,7 +130,7 @@
 
 
 |---|---|---|---|---|---|
-| **[induwara nilupul ]
+| ##induwara nilupul 
 
 
 
