@@ -75,7 +75,7 @@
 
 ## 🎀 STEP 02 -  Get Session
 
-<a href="https://pair-web-public.koyeb.app/
+<a href="https://pair-web-public.koyeb.app/"
 
 
 <br>
