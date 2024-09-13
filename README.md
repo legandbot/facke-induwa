@@ -56,7 +56,7 @@
   </a>
 </p>
 
-## ඩිප්ලෝයි කරපල්ල
+## 👈Deploy Now Fuck Bot👉
  
   <h1>👇 DEPLOY NOW 👇</h1>
 </div>
