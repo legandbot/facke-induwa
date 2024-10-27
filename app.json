@@ -7,7 +7,7 @@
 
   "env": {
     "SESSION_ID": {
-            "description": "Type the Session-ID you got from scaning QR / ඔබට ආපු කොඩය මෙතන්ට දමන්න",
+            "description": "mEdjzS6S#hqyubiEN7uvKO0FD4uRYBpgSGLVGWDhycCTh33Q6ZG0",
             "required": true,
             "value": "put session id here"
         },
