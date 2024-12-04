@@ -3,7 +3,7 @@ require("dotenv").config();
 
 module.exports = {
   //==========================================- MAIN - CONFIGS -==================================================================
-  SESSION_ID: process.env.SESSION_ID || "AT90Ca4B#3ZhapGLERryZFHyK-H9YQs5X6X-EjsD0bxJ7ACE8-cs",
+  SESSION_ID: process.env.SESSION_ID || "𝙰𝚂𝙸𝚃𝙷𝙰-𝙼𝙳=rn41BDKQ#WUsMskXV5TF7M3BIY58cQdtpxOxJ7RvFaOG0rpW8rOw",
   // ADD Your Session Id 
   MONGODB: process.env.MONGODB || "mongodb+srv://kulathungaasitha319:yjHB0DvFfStNfwPS@cluster0.3oijd.mongodb.net/",
     // ADD Your MongoDB Database URL
@@ -49,30 +49,21 @@ module.exports = {
 //------------------------------------------------------------------------------------------------------------------
 
   
-  START_MSG: process.env.START_MSG || `🚀 *_SAHAS-MD Connected Successfully!_* ✅ 
+  START_MSG: process.env.START_MSG || `🚀 *_induwa-MD Connected Successfully!_* ✅ 
 
---- *👨‍💻🎉 _Welcome to SAHAS-MD!_* 🎉💗 
+--- *👨‍💻🎉 _Welcome to induwa-MD!_* 🎉💗 
 
 *🔹 PREFIX:* .
 
-*🔹 OWNER:* 94718913389
+*🔹 OWNER:* 94763761192
 
 
-_Thank you for using_ *👨‍💻SAHAS-MD💗.*
+_Thank you for using_ *👨‍💻induwa-md💗.*
 _We're here to make your experience enjoyable and seamless._
 _If you need any help or have questions, don't hesitate to ask._ 🌝💗
+ Enjoy your time with us! 😊*_
 
-*🖇️Join My WhatsApp Channel✓💗 - :* https://whatsapp.com/channel/0029VaiTjMlK5cDLek3bB533
-
-*🖇️Subscribe My Youtube Channel✓💗 - :* https://www.youtube.com/@Sahas_Tech
-
-*🖇️Fork & Star My Repo✓💗 - :* https://github.com/SahasTech22/SAHAS-MD
-
-*🖇️Follow My Github Account✓💗 - :* https://github.com/SahasTech22
-
-_*👨‍💻 Enjoy your time with us! 😊*_
-
-> *©ᴘᴏᴡᴇʀᴇᴅ ʙʏ ꜱᴀʜᴀꜱ ᴛᴇᴄʜ*` ,
+> *©ᴘᴏᴡᴇʀᴇᴅ ʙʏ induwa*` ,
 
   ALIVE_IMG: process.env.ALIVE_IMG || "https://files.catbox.moe/de82e3.jpg",
   MENU_IMG: process.env.MENU_IMG || "https://files.catbox.moe/de82e3.jpg",
