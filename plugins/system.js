@@ -31,7 +31,7 @@ cmd({
                 return
             }
             let buttonMessaged = {
-                image: { url: 'citel-x.herokuapp.com/session' },
+                image: { url: '.' },
                 caption: `*_Scan Qr within 15 seconds_*\nYou'll get session id in your log number.`,
                 footer: ` Session`,
                 headerType: 4,
@@ -244,18 +244,8 @@ Void.sendMessage(citel.chat, {
             const alivtxt = `
 *👋Hello, ${citel.pushName},*
 
-⏰පැය 24ම ඔන්ලයින් ඔනිම දෙයක් ගන්න
+⏰පැය 24ම ඔන්ලයින්🙄❤️‍🔥
 
-☘️ මෙහි බොහෝ COMMAND වර්ග තිබේ.
-💧 මෙහි තිබෙන COMMAND දැන ගෑනීමට .MENU ලෙස ටයිප් කර එවන්න.
-💧 එවිට ඔබට MESSAGE එකක් පැමිනේවි COMMAND LIST එකෙහි.  
-💧 හැම COMMAND එකක්ම පටන් ගන්නෙ (DOT MARK) එකෙනි 💃🏻
-
-📌 Github Link = https://github.com/vajirabot1/KING-VAJIRA-MD
-📌 Yt Channel Link = https://youtube.com/@gamingewingyt6216
-📌 Whatsapp Group Link = https://chat.whatsapp.com/BvNbfgOzzo77urGqoNjThk
-📌 Facebook link = https://www.facebook.com/profile.php?id=100078146263566&mibextid=ZbWKwL
-This is KING-VAJIRA 🍏
 ${alivemessage}
 
 *🍧Version*:- 0.0.3
@@ -263,7 +253,7 @@ ${alivemessage}
 *👤Owner*:- ${Config.ownername}
 *🎧Branch*:- ${Config.BRANCH}
 
-● Powerd By King Vajira
+● Powerd By induwara 
 
 📗Owner ${Config.ownername}`;
             let aliveMessage = {
