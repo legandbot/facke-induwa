@@ -24,7 +24,7 @@ menu[commands[i].category] += `.${commands[i].pattern}\n`;
  }
 }
 
-let madeMenu =`👋 *Hello budy ${pushname}*
+let madeMenu =`👋 *Hello ${pushname}*
 > *Download commands*👈
 ${menu.download}
 
@@ -53,13 +53,8 @@ POWERED_BY_Induwara ❤️‍🔥
 `
 await conn.sendMessage(from,{text:madeMenu},{quoted:mek})
 
-
-
-
-
-}
-  
-}catch(e)
+}catch(e){
 console.log(e)
-replay(`${e}`)
+reply(`${e}`)
 }
+})
