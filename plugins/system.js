@@ -1,6 +1,6 @@
 const config = require('../config')
 const {cmd , commands} = require('../command')
-const os = reauire("os")
+const os = require("os")
 
 cmd({
     pattern: "system",
