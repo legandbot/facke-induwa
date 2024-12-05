@@ -2,7 +2,7 @@ const config = require('../config')
 const {cmd , commands} = require('../command')
 const os = reauire("os")
 cmd({
-    pattern: "menu",
+    pattern: "system",
     alias: ["status","botinfo"],
     desc: "check up time ,ram usage and more  ",
     category: "main",
