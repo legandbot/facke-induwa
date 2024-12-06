@@ -9,7 +9,7 @@ cmd({
     pattern: "ada",
     alias: ["adanews"],
     desc: "Get the latest Ada news.",
-    category: "search",
+    category: "News",
     react: "📰",
     use: '.ada',
     filename: __filename
