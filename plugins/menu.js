@@ -25,32 +25,33 @@ menu[commands[i].category] += `.${commands[i].pattern}\n`;
 }
 
 let madeMenu =`👋 *Hello ${pushname}*
-> *Download commands*👈
+
+> *Download Commands* 👈
+
 ${menu.download}
 
-    
 > *Main Commands* 🌝
+
 ${menu.main}
 
+> *Owner Commands* ⚜️
 
-> *owner commands* ⚜️
 ${menu.owner}
 
+> *Convert Commands* ♻️
 
-> *Convert commands* ♻️
 ${menu.convert}
 
+> *Group Commands* 💠
 
->*group commands* 💠
 ${menu.group}
 
+> *Search Commands* 🧐
 
-> *Search commands* 🧐
 ${menu.search}
 
+> POWERED BY INDUWA-MD`
 
-POWERED_BY_Induwara ❤️‍🔥
-`
 await conn.sendMessage(from,{text:madeMenu},{quoted:mek})
 
 }catch(e){
