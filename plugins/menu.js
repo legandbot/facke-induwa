@@ -29,27 +29,21 @@ let madeMenu =`👋 *Hello ${pushname}*
 > *Download Commands* 👈
 
 ${menu.download}
-
 > *Main Commands* 🌝
 
 ${menu.main}
-
 > *Owner Commands* ⚜️
 
 ${menu.owner}
-
 > *Convert Commands* ♻️
 
 ${menu.convert}
-
 > *Group Commands* 💠
 
 ${menu.group}
-
 > *Search Commands* 🧐
 
 ${menu.search}
-
 > POWERED BY INDUWA-MD`
 
 await conn.sendMessage(from,{text:madeMenu},{quoted:mek})
