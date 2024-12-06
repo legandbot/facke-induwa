@@ -34,7 +34,7 @@ cmd({
         }
 
        
-        let videoInfo = "*Saviya-Md YouTube Search Results:*\n\n";
+        let videoInfo = "*induwa-Md YouTube Search Results❤️‍🔥🌝:*\n\n";
         data.results.forEach(video => {
             const views = video.views ? video.views.toLocaleString() : "N/A"; 
             videoInfo += `┌──────────────────────\n`;
