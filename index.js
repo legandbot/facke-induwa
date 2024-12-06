@@ -72,7 +72,7 @@ console.log('Induwa-MD Bot Connected To WhatsApp ✅')
 
 let up = `*Induwa-MD Bot Connected Successful ✅*\n\n*Prefix: ${prefix}*`;
 
-conn.sendMessage("94763761192@s.whatsapp.net", { image: { url: `https://telegra.ph/file/900435c6d3157c98c3c88.jpg` }, caption: up })
+conn.sendMessage("94763761192@s.whatsapp.net", { image: { url: `https://i.ibb.co/jyVLMdD/infinitywabot.jpg` }, caption: up })
 
 }
 })
