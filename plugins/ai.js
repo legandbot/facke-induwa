@@ -11,8 +11,6 @@ cmd({
 async(conn, mek, m,{from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply}) => {
 try{
 
-const config = await readEnv()
-if(config.BLOCK_JID.includes(from)) return
 if(!q) return reply("*_Please give me a text._*")
 
 let data = await fetchJson(`https://www.dark-yasiya-api.site/ai/chatgpt?q=${q}`)
