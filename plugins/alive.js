@@ -9,8 +9,16 @@ cmd({
 },
 async(conn, mek, m,{from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply}) => {
 try{
+
+let msg = `*Hello ${pushname},*
+
+_I am INDUWA-MD created by Induwara_
+
+_Type .menu to get all commands list_
+
+> POWERED BY INDUWA-MD`
     
-await conn.sendMessage(from,{image: {url: `https://i.ibb.co/jyVLMdD/infinitywabot.jpg`},caption: `Hello ${pushname}, hello iam created by induwara🌝❤️‍🔥 *⭕my name is induwamd* *⭕my owner is induwara nilupul* !`},{quoted: mek})
+await conn.sendMessage(from,{image: {url: `https://i.ibb.co/jyVLMdD/infinitywabot.jpg`},caption: msg},{quoted: mek})
     
 }catch(e){
 console.log(e)
