@@ -1,52 +1,67 @@
 const { cmd, commands } = require('../command')
 const axios = require('axios');
 
-
-
 cmd({
     pattern: "rawana",
-    alias: ["getfilms"],
-    desc: "Get movie info from OMDb API.",
-    category: "get",
-    react: "☺",
-    use: '.rawana <movie name>', //Updated use section to show the movie name input is needed.
+    desc: "get films.",
+    category: "search",
     filename: __filename
-}, async (conn, mek, m, { from, reply, args }) => {
+    react: "⚜️"
+    use: ".rawana"
+
+}, async (conn, mek, m, { from, reply }) => {
     try {
-        const q = args.join(" "); // Get movie name from user input
 
-        if (!q) return reply("Please give me a movie name");
 
-        const response = await axios.get(`https://www.omdbapi.com/?apikey=448bb257&t=${q}`);
-        const data = response.data;
+// ඔබගේ ගොනු ගබඩා ස්ථානය
+const uploadDir = './https://cinesubz.co/episodes/page/3/';
 
-        if (data.Error) {
-            return reply(`Error: ${data.Error}`); // Handle API errors
-        }
+// ගොනු ගබඩාව නිර්මාණය කිරීම
+if (!fs.existsSync(uploadDir)) {
+  fs.mkdirSync(uploadDir);
+}
 
-        let mvInfo = `*INDUWA-MD MOVIE INFO*
+app.post('/download', async (req, res) => {
+    const movieUrl = req.body.movieUrl;
 
-● Movie Name : ${data.Title}
-● Released Date : ${data.Released}
-● Runtime : ${data.Runtime}
-● Genre : ${data.Genre}
-● Director : ${data.Director}
-● Actors : ${data.Actors}
-● Language : ${data.Language}
-● IMDB Rating : ${data.imdbRating}
-● Type : ${data.Type}
-● Box Office : ${data.BoxOffice}
-● Plot : ${data.Plot}
+    if (!movieUrl) {
+        return res.status(400).json({ error: 'චිත්‍රපට ලින්ක් එකක් ලබා දෙන්න' });
+    }
 
-> POWERED BY INDUWA-MD`;
-
-        await conn.sendMessage(from, {
-            image: { url: data.Poster },
-            caption: mvInfo
+    try {
+        const response = await axios({
+            url: movieUrl,
+            method: 'GET',
+            responseType: 'stream'
         });
 
+        const fileName = movieUrl.split('/').pop(); // ලින්ක් එකෙන් ගොනු නම ලබාගැනීම
+        const filePath = `${uploadDir}/${fileName}`;
+
+        await pipeline(response.data, createWriteStream(filePath));
+
+        res.json({ downloadLink: `/uploads/${fileName}` });
+
     } catch (error) {
-        console.error("Error fetching movie info:", error);
-        reply("Error fetching movie information. Please try again later.");
+        console.error('Error downloading movie:', error);
+        res.status(500).json({ error: 'චිත්‍රපටය ඩවුන්ලෝඩ් කිරීමේදී දෝෂයක්' });
     }
 });
+
+
+app.get('/uploads/:filename', (req, res) => {
+    const filename = req.params.filename;
+    const filePath = `${uploadDir}/${filename}`;
+
+    if (fs.existsSync(filePath)) {
+        res.download(filePath);
+    } else {
+        res.status(404).json({ error: 'ගොනුව හමු නොවීය' });
+    }
+});
+
+const port = 3000;
+app.listen(port, () => console.log(`Server listening on port ${port}`));
+  }
+});
+
