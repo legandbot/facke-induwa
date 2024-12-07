@@ -2,37 +2,51 @@ const { cmd, commands } = require('../command')
 const axios = require('axios');
 
 
+
 cmd({
     pattern: "rawana",
     alias: ["getfilms"],
-    desc: "Get the latestfilm on cinzesub.",
+    desc: "Get movie info from OMDb API.",
     category: "get",
     react: "☺",
-    use: '.rawana',
+    use: '.rawana <movie name>', //Updated use section to show the movie name input is needed.
     filename: __filename
-}, async (conn, mek, m, { from, reply }) => {
+}, async (conn, mek, m, { from, reply, args }) => {
     try {
-       
-        const apiUrl = "https://cinesubz.co/episodes/page/3/";
+        const q = args.join(" "); // Get movie name from user input
 
-       
-        const response = await axios.get(apiUrl);
+        if (!q) return reply("Please give me a movie name");
 
-        
-        if (!response.data.status) {
-            return reply("Failed to fetch the latest film. Please try again later.");
+        const response = await axios.get(`https://www.omdbapi.com/?apikey=448bb257&t=${q}`);
+        const data = response.data;
+
+        if (data.Error) {
+            return reply(`Error: ${data.Error}`); // Handle API errors
         }
 
-        
-        const { title, image, date, time, url, desc } = response.data.result;
+        let mvInfo = `*INDUWA-MD MOVIE INFO*
 
-        
-        const rawanMessage = `❤️‍🔥 *${title}*\n\n${desc}\n\n*📅 Date:* ${date}\n*🕒 Time:* ${time}\n\n🔗 [Read More](${url})`;
+● Movie Name : ${data.Title}
+● Released Date : ${data.Released}
+● Runtime : ${data.Runtime}
+● Genre : ${data.Genre}
+● Director : ${data.Director}
+● Actors : ${data.Actors}
+● Language : ${data.Language}
+● IMDB Rating : ${data.imdbRating}
+● Type : ${data.Type}
+● Box Office : ${data.BoxOffice}
+● Plot : ${data.Plot}
 
-       
-        await conn.sendMessage(from, { image: { url: image }, caption: newsMessage });
-    } catch (e) {
-        console.log(e);
-        reply(`An error occurred: ${e.message}`);
+> POWERED BY INDUWA-MD`;
+
+        await conn.sendMessage(from, {
+            image: { url: data.Poster },
+            caption: mvInfo
+        });
+
+    } catch (error) {
+        console.error("Error fetching movie info:", error);
+        reply("Error fetching movie information. Please try again later.");
     }
 });
