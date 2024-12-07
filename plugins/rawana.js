@@ -4,7 +4,7 @@ const axios = require('axios');
 cmd({
     pattern: "rawana",
     desc: "get films.",
-    category: "search",
+    category: "movie",
     filename: __filename
     react: "⚜️"
     use: ".rawana"
